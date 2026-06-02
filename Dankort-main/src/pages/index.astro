@@ -1,0 +1,23 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import LoginSite from '../components/LoginSite.astro';
+
+---
+
+<Layout>
+<LoginSite />
+</Layout>
+
+<script>
+	const userType = localStorage.getItem("userType");
+
+const bruger = document.getElementById("bruger");
+const guest = document.getElementById("guest");
+
+if (userType === "bruger") {
+  guest.style.display = "none";
+} else {
+  bruger.style.display = "none";
+}
+</script>

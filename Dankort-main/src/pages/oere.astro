@@ -1,0 +1,31 @@
+---
+//@ts-nocheck
+import Layout from '../layouts/Layout.astro';
+import GuestOre from '../components/GuestOre.astro';
+import BrugerOre from '../components/BrugerOre.astro';
+
+
+---
+
+
+<Layout>
+<div id="bruger">
+  <BrugerOre />
+</div>
+
+<div id="guest">
+  <GuestOre />
+</div>
+</Layout>
+<script>
+const userType = localStorage.getItem("userType");
+
+const bruger = document.getElementById("bruger");
+const guest = document.getElementById("guest");
+
+if (userType === "bruger") {
+  guest.style.display = "none";
+} else {
+  bruger.style.display = "none";
+}
+</script>
