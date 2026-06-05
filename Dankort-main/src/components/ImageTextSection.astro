@@ -10,19 +10,16 @@
         />
       </div>
 
-      <div class="img-text__content">
+      <div>
 
-        <span class="img-text__category">
+        <h4 class="img-text__category">
           OM DANKORT ØREMÆRKET
-        </span>
+        </h4>
 
         <h2 class="img-text__title">
           Én lille handling.
           <br />
-
-          <span class="img-text__highlight">
-            For en grønnere fremtid.
-          </span>
+          For en grønnere fremtid.
         </h2>
 
         <p class="img-text__description">
@@ -31,7 +28,10 @@
           Dankort eller Visa/Dankort i Danmark.
         </p>
 
-        <a href="https://dankort.dk/oremaerket/bagom-tallene" class="img-text__link">
+        <a
+          href="https://dankort.dk/oremaerket/bagom-tallene"
+          class="img-text__link"
+        >
           Læs mere om hvordan det virker
         </a>
 
@@ -41,108 +41,80 @@
 
   </div>
 </section>
- 
+
 <style>
-
-
-
-
-
-
-
   .img-text {
     padding: 1.25rem 0 2rem;
-margin-top: 30px;
-margin-bottom: 30px;
-    color: #1A1A1A;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
- 
+
   .img-text__container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.25rem;
   }
- 
+
   .img-text__inner {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
- 
+
   .img-text__image img {
     width: 100%;
-    height: 361px;
-    border-radius: 55px;
+    height: 200px;
+    border-radius: 25px;
     object-fit: cover;
     display: block;
   }
- 
-  .img-text__category {
-    display: block;
 
-    font-weight: bolder;
+  .img-text__category {
+    color: #E21E26;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #E21E26;
-    margin-bottom: 0.875rem;
+    margin-bottom: 20px;
   }
- 
+
   .img-text__title {
-
     line-height: 1.2;
-
-
+    color: black;
+    margin-bottom: 20px;
   }
- 
-  .img-text__highlight {
-    color: #1A1A1A;
-  }
- 
+
   .img-text__description {
     color: #1A1A1A;
-
-
     max-width: 42ch;
-    line-height: 1.5;
-
+    line-height: 1.85;
   }
- 
+
   .img-text__link {
     color: #E21E26;
     text-decoration: none;
     font-weight: bolder;
   }
- 
+
   .img-text__link:hover {
     color: #E21E26;
   }
- 
+
   @media (min-width: 768px) {
     .img-text {
       padding: 2.5rem 0;
     }
- 
+
     .img-text__container {
       padding: 0 1.5rem;
     }
- 
+
     .img-text__inner {
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: center;
     }
- 
-    .img-text__inner--reverse .img-text__image {
-      order: 2;
-    }
- 
+
     .img-text__image img {
       aspect-ratio: 4 / 3;
     }
- 
-
   }
- 
- 
 </style>
- 
