@@ -1,6 +1,6 @@
 ---
 import Navbar from '../components/Navbar.astro';
-
+import './styles/global.css';
 import Footer from '../components/Footer.astro';
 ---
 <!doctype html>
@@ -21,67 +21,3 @@ import Footer from '../components/Footer.astro';
 		<Footer />
 	</body>
 </html>
-
-<style>
-	* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;  
-font-family: 'Raleway', sans-serif;
-}
-img {
-width: 100%;
-height: auto;
-display: block;
-}
-	
-
-
- h1{
-        font-weight: extra-bold; 
-        font-size: 25px;
-		    line-height: 1.4;
-    }
-h2 {
-      color:#E21E27;  
-      font-weight: extra-bold;
-      font-size: 12px;
-	      line-height: 1.4;
-     }
-    span{
-        color: #E21E27;
-		font-weight: bolder;
-     }
-     p {
-        font-weight: regular;
-        font-size: 12px;
-		    line-height: 1.4;
-     }
-	   a {
-        font-weight: bolder;
-        font-size: 12px;
-     }
-
-     h3{
-        font-size: 18px;
-        font-weight: extra-bold;
-		    line-height: 1.4;
-	
-     }
-
-	 footer a{
-		font-weight: regular;
-		font-size: 12px;
-	 }
-	 @media (min-width: 768px) {
-		h1{
-			font-size: 60px;
-		}
-		h2 {
-			font-size: 16px;
-		}
-		p {
-			font-size: 14px;
-		}
-	}
-</style>
