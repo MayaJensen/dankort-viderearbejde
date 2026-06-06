@@ -9,7 +9,7 @@ const { fordel } = Astro.props;
     <img src={fordel.Image} alt={fordel["Front-title"]} />
 
     <div class="overlay">
-      <img id="lock" src="/images/lås.webp" alt="" />
+      <img id="lock" src="/images/Vector.webp" alt="" />
       <p>Benyt appen for at gøre brug af points</p>
     </div>
 
@@ -68,10 +68,10 @@ const { fordel } = Astro.props;
 }
 
 #lock{
-  width: 50px;
+  min-width: 40px;
   height: 50px;
   margin-bottom: 12px;
-
+object-fit: contain;
 }
 
 .overlay p {
