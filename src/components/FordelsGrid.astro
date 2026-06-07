@@ -12,15 +12,12 @@ const options = {
   },
 };
 
+
 const products = await fetch(endpoint, options).then((res) => res.json());
 
-const kategorier = [
-  "Konkurrencer",
-  "Mad & Café",
-  "Mode & Sport",
-  "Livsstil & Wellness",
-  "Genbrug & Bæredygtighed",
-];
+const kategorier = [...new Set(products.map((item) => item.Kategori))];
+
+
 ---
 
 <section class="wrapper">
