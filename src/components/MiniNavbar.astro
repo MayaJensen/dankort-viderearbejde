@@ -1,0 +1,205 @@
+---
+const { active } = Astro.props;
+---
+
+<div class="user-profile">
+    
+  <div class="avatar">JJ</div>
+
+  <span class="user-name">Jens Jensen</span>
+
+  <span class="arrow">⌄</span>
+
+</div>
+
+<section class="tabs-wrapper">
+
+  <nav class="tabs">
+    
+    <a 
+      href="/velkommen" 
+      class={`tab ${active === "velkommen" ? "active" : ""}`}
+    >
+      Velkommen
+    </a>
+
+    <a 
+      href="/fordele" 
+      class={`tab ${active === "fordele" ? "active" : ""}`}
+    >
+      Fordele
+    </a>
+
+    <a 
+      href="/oere" 
+      class={`tab ${active === "oere" ? "active" : ""}`}
+    >
+      Om Øremærket
+    </a>
+
+  </nav>
+
+</section>
+
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: raleway, sans-serif;
+  }
+
+  .user-profile {
+    position: absolute;
+
+    top: 130px;
+    right: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    z-index: 1;
+  }
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    background: #ececec;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+  }
+
+  .user-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .arrow {
+    font-size: 18px;
+    color: #111;
+
+    margin-bottom: 8px;
+  }
+
+  .tabs-wrapper {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: #f5f5f5;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 16px;
+
+    z-index: 1;
+  }
+
+  .tabs {
+    width: 100%;
+    max-width: 700px;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    border-bottom: 2px solid #d9d9d9;
+  }
+
+  .tab {
+    position: relative;
+
+    text-decoration: none;
+    color: #111;
+
+    padding-bottom: 14px;
+
+    white-space: nowrap;
+
+    font-size: 14px;
+  }
+
+.tab::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+
+  width: 100%;
+  height: 3px;
+
+  background: #e31b23;
+
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.tab:hover::after {
+  transform: scaleX(1);
+}
+
+.tab.active::after {
+  transform: scaleX(1);
+}
+
+
+  @media (min-width: 768px) {
+
+    .user-profile {
+    z-index: 10;
+      right: 40px;
+
+      gap: 16px;
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+font-weight: lighter;
+      font-size: 22px;
+    }
+
+    .user-name {
+      font-size: 16px;
+    }
+
+    .arrow {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .tabs-wrapper {
+      position: relative;
+
+      padding-top: 48px;
+      padding-bottom: 40px;
+
+      background: white;
+    }
+
+    .tabs {
+      max-width: 560px;
+      gap: 145px;
+    }
+
+    .tab {
+      font-size: 16px;
+      padding-bottom: 18px;
+    }
+
+    
+  }
+</style>

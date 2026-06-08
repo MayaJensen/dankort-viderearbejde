@@ -1,0 +1,120 @@
+<section class="img-text">
+  <div class="img-text__container">
+
+    <div class="img-text__inner">
+
+      <div class="img-text__image">
+        <img
+          src="/images/enlillehandling.webp"
+          alt="Dansk natur"
+        />
+      </div>
+
+      <div>
+
+        <h4 class="img-text__category">
+          OM DANKORT ØREMÆRKET
+        </h4>
+
+        <h2 class="img-text__title">
+          Én lille handling.
+          <br />
+          For en grønnere fremtid.
+        </h2>
+
+        <p class="img-text__description">
+          Dankort (og bankerne) donerer automatisk 1 øre til
+          Den Danske Naturfond, hver gang du betaler med dit
+          Dankort eller Visa/Dankort i Danmark.
+        </p>
+
+        <a
+          href="https://dankort.dk/oremaerket/bagom-tallene"
+          class="img-text__link"
+        >
+          Læs mere om hvordan det virker
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .img-text {
+    padding: 1.25rem 0 2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .img-text__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  .img-text__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .img-text__image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .img-text__category {
+    color: #E21E26;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .img-text__title {
+    line-height: 1.2;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .img-text__description {
+    color: #1A1A1A;
+    max-width: 42ch;
+    line-height: 1.85;
+  }
+
+  .img-text__link {
+    color: #E21E26;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  .img-text__link:hover {
+    color: #E21E26;
+  }
+
+  @media (min-width: 768px) {
+    .img-text {
+      padding: 2.5rem 0;
+    }
+
+    .img-text__container {
+      padding: 0 1.5rem;
+    }
+
+    .img-text__inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .img-text__image img {
+      aspect-ratio: 4 / 3;
+    }
+  }
+</style>

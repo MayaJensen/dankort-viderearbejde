@@ -1,0 +1,221 @@
+---
+---
+<div class="velkommen-wrapper">
+  <section class="velkommen">
+    <h1>Velkommen til <br><span>Dankort Ung</span></h1>
+    <h3><span>Et univers der gør en forskel</span></h3>
+    <p>Med Dankort Ung får du mere ud af dine betalinger.</p>
+    <p>Hver gang du bruger dit Dankort, optjener du point, som giver adgang til eksklusive konkurrencer, fordele og oplevelser.</p>
+    <h2>Som medlem af Dankort Ung får du blandt andet adgang til:</h2>
+    <ul class="sommedlempunkter">
+      <li>Konkurrencer om koncert og festivalbilletter</li>
+      <li>Biografbilletter og oplevelser</li>
+      <li>Gavekort til caféer, shopping og kultur</li>
+      <li>Særlige kampagner</li>
+    </ul>
+    <p>Dankort Ung er skabt for at give dig lidt ekstra i hverdagen, samtidig med at du helt automatisk donerer til den Danske Natur Fond.</p>
+    
+    <div class="app app-desktop">
+      <img src="/images/appstoreknap.webp" alt="appstore">
+      <img src="/images/googleplayapp.webp" alt="googleplay">
+    </div>
+  </section>
+
+  <section class="iphoneogapp">
+    <div class="iphone">
+      <img src="/images/Velkommen-iphonebilleder.webp" alt="iphonebilleder">
+    </div>
+    <p><span>Har du ikke et Dankort endnu? - Kontakt din bank og forhør dig.</span></p>
+    <a href="/" class="login-btn">Log ind</a>
+    
+    <div class="app app-mobil">
+      <img src="/images/appstoreknap.webp" alt="appstore">
+      <img src="/images/googleplayapp.webp" alt="googleplay">
+    </div>
+  </section>
+</div>
+
+
+<style>
+
+   h1{
+        font-weight: extra-bold; 
+        font-size: 35px;
+		    line-height: 1.4;
+        margin-bottom: 10px;
+    }
+h2 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 12px;
+	  line-height: 1.4;
+
+     }
+    span{
+        color: #E21E27;
+		font-weight: bolder;
+     }
+     p {
+        font-weight: regular;
+        font-size: 12px;
+		    line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 20px;
+     }
+	   a {
+        font-weight: bolder;
+    
+     }
+     li {
+        font-weight: regular;
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 8px;
+     }
+  ul.sommedlempunkter {
+   
+        margin: 0 0 30px 20px;
+     }
+
+     h3{
+        font-size: 18px;
+
+		    line-height: 1.4;
+        margin-top: 0;
+                margin-bottom: 10px;
+	
+     }
+.velkommen {
+  margin: 40px;
+}
+
+.sommedlempunkter {
+  font-size: 10px;
+}
+
+.iphoneogapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.iphone img {
+  width: 80%;
+  display: block;
+  margin-left: 10%;
+}
+
+.login-btn {
+  display: block;
+  background-color: #E21E27;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 10px;
+  padding: 8px 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.app img {
+  height: 35px;
+  width: auto;
+}
+
+
+.app-desktop {
+  display: none;
+}
+
+
+.app-mobil {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+	h1{
+			font-size: 60px; 
+         margin-top: 0;
+min-width: 400px;
+		}
+		h2 {
+			font-size: 16px;
+		}
+		p {
+			font-size: 14px;
+		}
+
+li{font-size: 14px;}
+
+  .velkommen {
+    margin: 0 40px 40px 50px;
+  }
+
+
+
+
+  .sommedlempunkter {
+    font-size: 16px;
+
+  }
+
+  .velkommen-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+  }
+
+  .iphoneogapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .iphone{
+    width:550px;
+  }
+
+  .iphone img {
+  width: 100%;
+  padding: 30px 0 0 0;
+  margin-left: 0;
+  margin-right: 500px;
+}
+  .login-btn {
+    font-size: 16px;
+    padding: 12px 80px;
+  }
+
+
+  .app-mobil {
+    display: none;
+  }
+
+
+  .app-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .app-desktop img {
+    height: 45px;
+    width: auto;
+  }
+ }
+</style>
